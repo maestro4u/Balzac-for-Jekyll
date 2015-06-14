@@ -1,12 +1,12 @@
 ---
 layout: post-light-feature
-title: 마크다운 문법사용 기능화중 SearchLink
+title: SearchLink which is one of convinent functions
 description: "마크다운 문법을 이용한 글을 작성하다보면 링크 작성시 관련사이트의 주소를 복사해서 붙여넣기 까지 여간 불편한게 아닌데 이런 불편함을 다소 해소할 수 있는 자동화 기능을 소개합니다."
 categories: articles
 date: 2015-06-14
 image: 
 ---
-### 시작하기에 앞서
+## 시작하기에 앞서
 
 블로그를 관리하다보면 가장 많은 손길이 가는게 링크관리라는 것을 누구나 알게 됩니다. 그러한 링크관리를 간단히 하기 위해 마크다운 문법을 도입해서 사용을 하더라도 필요한 웹사이트를 검색하고 복사해서 붙여넣기 하는 일련의 작업들은 블로깅의 가장 큰 독소요소가 아니었나 싶습니다.
 
@@ -16,16 +16,15 @@ image:
 
 그럼 그 고마운 기능속으로 함께 들어가 보시겠습니다. 
 
-### SearchLink
+## SearchLink
+
 제가 오늘 소개시켜드릴 내용은 [SearchLink](http://brettterpstra.com/projects/searchlink/)에 대한 내용입니다.   
   
 SearchLink는 http://brettterpstra.com/ 에 소개된 내용으로 중요기능으로는 텍스트 상에서 인터넷 검색을 통해 검색어의 링크주소를 자동으로 가져와서 마크다운 문법에 맞도록 표현해 주는 것입니다.
 	
 몇마디 글보다 사용법에 대한 간략한 아래의 영상을 보면 더욱 이해가 빠를 것입니다.
 
-
-
-### 활용법
+## 활용법
 
 일반적으로 마크다운에서 링크를 활용하는 방법은 크게 두가지 방법이 있습니다. 직접링크 방법 및 간접링크 방법으로 나눌 수 있는데, 직접링크 방법은 `[링크텍스트](링크url)`형태로 작성되는 방법으로 링크텍스트의 링크주소를 바로 확인가능하지만, 텍스트 링크로 인하여 블로깅이 방해받을 수 있는 단점이 있는 반면 링크텍스트와 링크주소가 한자리에 있으므로 해서 링크주소의 무결성을 보장할 수 있는 장점이 있습니다. 
 
@@ -33,11 +32,11 @@ SearchLink는 http://brettterpstra.com/ 에 소개된 내용으로 중요기능�
 
 SearchLink 이용시 두가지 방법으로 모두 작성이 가능합니다만, 직접링크 방법이 간접링크 방법에 비해 훨씬 간편합니다.
 
-### 프로그램 다운로드
+## 프로그램 다운로드
 
 SearchLink 는 현재 2.2 버전까지 나와 있으며 [Download SearchLink v2.2.0](http://cdn3.brettterpstra.com/downloads/SearchLink2.2.0.zip)를 통해 무료로 받아서 사용할 수 있으며, 감사의 의미로 [기부](http://brettterpstra.com/donate/?ppid=A9KK2MTU7QSJU&submit=)를 하셔도 괜찮습니다.
 
-### 프로그램 설치
+## 프로그램 설치
 
 다운받은 프로그램은 시스템 서비스에 등록하여 사용하면 됩니다. 먼저 다운받은 Zip 파일을 압축해제 하면 3개의 파일이 생성됩니다. 이 파일들을 `~/Library/Services` 폴더에 모두 복사합니다. 그러면 별도의 설정없이 검색을 원하는 텍스트를 선택한 후 우측버튼을 클리해서 `Services > SearchLink`를 클릭하시면 바로 사용이 가능합니다.
 
@@ -45,7 +44,7 @@ SearchLink 는 현재 2.2 버전까지 나와 있으며 [Download SearchLink v2.
   
 그러면 우측버튼을 눌러 찾는 과정없이 텍스트 입력 후 단축키를 입력하면 바로 프로그램이 실행됩니다. 저의 경우에는 `⌃⌥⇧⌘S`에 등록하여 사용하고 있습니다.
 
-### 프로그램 사용
+## 프로그램 사용
 
 프로그램의 사용법은 너무도 간단하다. 블로그 작성 텍스트 창에서 검색어를 입력해서 SearchLink를 실행시키면 `[검색어](검색어 링크)` 의 형태로 변환되어 작성됩니다. 여기서 간과해서는 안되는 중요한 사항이 검색된 링크주소는 구글에서 가장먼저 제공되는 주소라는 점입니다.
 
@@ -61,9 +60,9 @@ SearchLink 는 현재 2.2 버전까지 나와 있으며 [Download SearchLink v2.
 
 가장 기본적인 내용은 상기와 같으며 여기서 찾고자 하는 검색어 작성에 있어서 몇가지 옵션이 있습니다. 
 
-### 검색옵션
+## 검색옵션
 
-#### 1. 소프트웨어 검색 옵션
+### 1. 소프트웨어 검색 옵션
 
 * !mas : 맥앱스토어 URL 을 검색합니다.  
 
@@ -87,7 +86,7 @@ SearchLink 는 현재 2.2 버전까지 나와 있으며 [Download SearchLink v2.
   
 참고로 검색결과는 미국 스토어 검색결과이며, 한글검색은 불가합니다.  
 
-####2. 기본검색   
+### 2.기본검색   
   
 * !g : 구글에서 가장 먼저 나타나는 URL   
   
@@ -99,7 +98,7 @@ SearchLink 는 현재 2.2 버전까지 나와 있으며 [Download SearchLink v2.
   
 참고로 구글검색에서 오류발생시 빙 검색도 오류가 발생됩니다.
 
-####3. 전문검색   
+### 3. 전문검색   
   
 * !wiki : [Wikipedia](https://www.wikipedia.org/) 검색결과 URL 제공
   
@@ -113,7 +112,7 @@ SearchLink 는 현재 2.2 버전까지 나와 있으며 [Download SearchLink v2.
 
 	`!spell soluton => solution`  
   
-####4. 음악검색(미국 아이튠즈 결과 제공)   
+### 4. 음악검색(미국 아이튠즈 결과 제공)   
 * !isong : 아이튠즈 음악 링크   
   
 	`[](!isong Blurred Lines) => [Blurred Lines](https://itunes.apple.com/us/album/blurred-lines-feat.-t.i.-pharrell/id667140011?i=667140173&uo=4&at=10l4tL&ct=searchlink)` 
@@ -132,20 +131,20 @@ SearchLink 는 현재 2.2 버전까지 나와 있으며 [Download SearchLink v2.
 
 이 외에도 몇가지 옵션이 있으나, 국내에서 거의 사용이 불가함으로 제외시켰습니다. 확인하고 싶으신 분들은 [원문](http://brettterpstra.com/projects/searchlink/)을 참고하세요.  
   
-####5. 아마존   
+### 5. 아마존   
   
 * !a : 모든 카테고리 내에서 아마존 판매물품 검색 링크
 
 	`[](!a iPhone 6) => [iPhone 6](http://www.amazon.com/gp/product/B00NQGP42Y/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00NQGP42Y&linkCode=as2&tag=brettterpstra-20)`  
   
   
-####6. 웹페이지 검색   
+### 6. 웹페이지 검색   
   
 * ![검색 사이트 url] : 링크 텍스트에 명시된 검색어를 프로토콜("http://") 없이 언급된 검색 사이트를 통해 자동으로 검색
 
 	`[MarkdownEditing](!github.com) => [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing)`
   
-####7. 브라우저 히스토리 검색   
+### 7. 브라우저 히스토리 검색   
   
 * !h[s/c]b[s/c]h : 사파리 혹은 구글의 북마크 및 히스토리 내 결과를 검색하여 표현
 
@@ -157,13 +156,13 @@ SearchLink 는 현재 2.2 버전까지 나와 있으며 [Download SearchLink v2.
   
 	`!hcbsh  brett terpstra doing`  
   
-####8. 트위터와 ADN 사용자 검색   
+### 8. 트위터와 ADN 사용자 검색   
   
 * !@t : 트위터 사용자 이름 검색후 링크 제공   
 
 	`!@t back2themac => [back2themac](https://twitter.com/back2themac)`   
 
-#### 9. 기타 연산자   
+### 9. 기타 연산자   
 * `!!` : 검색어 뒤에 붙여서 마크다운 링크 형식이 아닌 URL 형식으로 표현하고잘 할 때 사용함.     
   
 	`Marked 2!! => http://marked2app.com/`  
@@ -180,7 +179,7 @@ SearchLink 는 현재 2.2 버전까지 나와 있으며 [Download SearchLink v2.
   
 	`Marked 2: => [Marked 2]: http://marked2app.com/ `  
 
-### 사용후기
+## 사용후기
 
 지금껏 블로그를 사용하면서 "꼭 있었으면..." 하고 혼자서 생각하고 있던 기능이었는데 인터넷 검색 중에 발견하고는 큰 감동과 함께 프로그램의 중요성을 다시한번더 실감했습니다. 하지만 만든이의 홈페이지 위주의 검색 기능 등은 사용자가 원하는 내용으로 충분히 수정이 가능할 것으로 판단됩니다.  
   
