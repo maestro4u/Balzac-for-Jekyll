@@ -20,7 +20,7 @@ p {
 
 .post ul li {
     font-size: $fsp;
-    line-height: $lh;
+    line-height: $lh/2;
     margin-bottom: $lh/3;
 }
 
@@ -29,12 +29,12 @@ p {
 /* Headings
    ========================================================================== */
 
-h1,.h1 {      font-size: $fs1; }
-h2,.h2 {      font-size: $fs2; } 
-h3,.h3 {      font-size: $fs3; } 
-h4,.h4 {      font-size: $fs4; } 
-h5,.h5 {      font-size: $fs5; } 
-h6,.h6 {      font-size: $fs6; } 
+h1,.h1 {      font-size: $fs1; color:#858588;}
+h2,.h2 {      font-size: $fs2; color:#c783d7;} 
+h3,.h3 {      font-size: $fs3; color:#ee9d47; border-left: 5px solid #4197B8; padding:0 10px 1px;} 
+h4,.h4 {      font-size: $fs4; color:#68c14f;} 
+h5,.h5 {      font-size: $fs5; color:#48b1e9;} 
+h6,.h6 {      font-size: $fs6; color:#ebe44d;} 
 
 .meta {       font-size: $fs6; }
 

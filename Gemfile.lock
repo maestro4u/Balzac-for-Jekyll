@@ -43,4 +43,8 @@ DEPENDENCIES
   coderay
   jekyll
   jekyll-minibundle
+  kramdown
   rake
+
+BUNDLED WITH
+   1.10.3

@@ -1,20 +1,20 @@
-title:            Balzac
+title:            MAESTRO4U
 tagline:          A beautiful theme.
-description:      Describe your website.
-canonical: http://jekyll.gtat.me
+description:      삶의 진솔한 모습과 내가 가진 열정을 보여주는 흰도화지
+canonical:        http://www.maestro4u.kr
 
 # Owner/author information
 owner:
-  name:           Cole Townsend
+  name:           Hoon Kim
   avatar:         avatar.png
-  bio:            "Aesthete & Athlete"
-  email:          cole@coletownsend.com
-  twitter:        twnsndco
-  github:         coletownsend
-  instagram:      ctrunsthis
-  dribbble:       coletownsend
-  disqus:         balzac
-  location:       "Buffalo, NY"
+  bio:            "Civil Engineer"
+  email:          huni.kim@gmail.com
+  twitter:        HuniKim
+  github:         maestro4u
+  instagram:      
+  dribbble:       
+  disqus:          
+  location:       "Seoul, Korea"
   # Plug in your disqus shortname!
 
 tools:
@@ -27,14 +27,14 @@ links:
   - title: About
     url: /about
   - title: Github
-    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
+    url: https://github.com/maestro4u/maestro4u.github.io
     external: true
-  - title: Cole Who?
-    url: http://coletownsend.com
+  - title: Hoon Who?
+    url: http://backtothemac2.tistory.com
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    South Korea
 future:      true
 highlighter: pygments
 markdown:    kramdown
