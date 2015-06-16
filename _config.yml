@@ -30,8 +30,7 @@ links:
     url: https://github.com/maestro4u/maestro4u.github.io
     external: true
   - title: Hoon Who?
-    url: http://backtothemac2.tistory.com
-    external: true
+    url: /whoami
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    South Korea
