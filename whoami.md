@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: post-light-feature
 permalink: /whoami/index.html
 title: Who Am I?
 description: 
 tags: [WhoAmI, Jekyll, theme, responsive]
 image:
-  feature: soft-trees.jpg
+  feature: /sub01/whoami.jpg
 ---
 
 ### 꿈과 비젼

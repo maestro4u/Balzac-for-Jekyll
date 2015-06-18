@@ -33,7 +33,7 @@ links:
     url: /whoami
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    South Korea
+timezone:    Asia/Seoul
 future:      true
 highlighter: pygments
 markdown:    kramdown
