@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Screencast를 위한 바탕화면 정리를 위한 Applescript
+title: 바탕화면 정리용 액션스크립트
 description: 맥을 이용한 방송(screencast)을 준비하고자 할 때 바탕화면 정리를 위해 사용할 수 있는 맥오토매이션.
 category: articles
 date: 2015-06-18
@@ -55,25 +55,25 @@ image:
 
 on run
     set current_state to do shell script "defaults read com.apple.finder CreateDesktop"
-if current_state = "1" then
-    tell application "Finder" to set old_wallpaper to POSIX path of (desktop picture as alias)
-    do shell script "echo " & old_wallpaper & " > ~/.olddesktop"
-    tell application "Finder" to set desktop picture to (POSIX file "/Users/hoonkim/Wallpaper/fun_with_colors_by_vikraj-d5vk6d5-2.png")
-    tell application "System Events" to set the autohide of the dock preferences to true
-    tell application "GeekTool Helper" to set visible of group "Default Group" to false
-    do shell script "defaults write com.apple.finder CreateDesktop 0 && killall \"Finder\""
-    delay 5
-    tell application "TotalFinderCrashWatcher" to launch
-else
-    tell application "System Events" to set the autohide of the dock preferences to true
-    tell application "GeekTool Helper" to set visible of group "Default Group" to true
-    tell application "GeekTool Helper" to refresh
-    set old_wallpaper to do shell script "cat ~/.olddesktop"
-    tell application "Finder" to set desktop picture to (POSIX file old_wallpaper)
-    do shell script "defaults write com.apple.finder CreateDesktop 1 && killall \"Finder\""
-    delay 5
-    tell application "TotalFinderCrashWatcher" to launch
-end if
+	if current_state = "1" then
+        tell application "Finder" to set old_wallpaper to POSIX path of (desktop picture as alias)
+        do shell script "echo " & old_wallpaper & " > ~/.olddesktop"
+        tell application "Finder" to set desktop picture to (POSIX file "/Users/hoonkim/Wallpaper/fun_with_colors_by_vikraj-d5vk6d5-2.png")
+        tell application "System Events" to set the autohide of the dock preferences to true
+        tell application "GeekTool Helper" to set visible of group "Default Group" to false
+        do shell script "defaults write com.apple.finder CreateDesktop 0 && killall \"Finder\""
+        delay 5
+        tell application "TotalFinderCrashWatcher" to launch
+	else
+        tell application "System Events" to set the autohide of the dock preferences to true
+        tell application "GeekTool Helper" to set visible of group "Default Group" to true
+        tell application "GeekTool Helper" to refresh
+        set old_wallpaper to do shell script "cat ~/.olddesktop"
+        tell application "Finder" to set desktop picture to (POSIX file old_wallpaper)
+        do shell script "defaults write com.apple.finder CreateDesktop 1 && killall \"Finder\""
+        delay 5
+        tell application "TotalFinderCrashWatcher" to launch
+	end if
 end run
 {% endhighlight %}
 
